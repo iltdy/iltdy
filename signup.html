@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0, minimum-scale=0.5">
+    <title>Sign Up</title>
+    <link rel="shortcut icon" href="/dashboard/assets/images/favicon.ico">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+  <img src="img/logo.png" height="60px" class="logo" >
+    <div class="split-screen">
+
+        
+        <div class="left" style="background:url(img/img1.png); background-size: cover;">
+            <section class="copy">
+                
+
+            </section>
+        </div>
+        <div class="right">
+            <form>
+                <section class="copy">
+                    <h2 style="margin-top: 100px;">Sign Up</h2>
+                    <div class="login-container" style="margin-bottom: 35px">
+                        <p> Already have an account?<a href="index.html">
+                                <strong>Log in</strong></a></p>
+                    </div>
+                </section>
+              <!--  <div class="input-container name">
+                    <label for="fname">Full name</label>
+                    <Input id="fname" name="fname" type="text">
+                </div>-->
+                <div class="input-container email">
+                    <label for="fname">Email</label>
+                    <Input id="email" name="email" type="email">
+                </div>
+                <div class="input-container password">
+                    <label for="password">Create Password</label>
+                    <Input id="password" name="password" type="password" placeholder="Must be at least 6 characters">
+                            <i class="fa fa-eye eye" aria-hidden="true" id="eye" onclick="toggle()"></i>
+                </div>
+                <div class="input-container password">
+                    <label for="password">Re-enter Password</label>
+                    <Input id="password" name="password" type="password" placeholder="Confirm password">
+                </div>
+               <!-- <div class="input-container cta">
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Sign up for email updates.
+                    </label>
+                </div>-->
+                <button class="signup-btn" type="submit">Sign Up</button>
+
+                <div class="social-container copy login-container">
+                    <p style="margin-top: 2rem; font-size: 1rem; font-weight: 600; color: #6A2278;">Continue with</p>
+                    <a href="#" class="social" style="font-size: 20px;"><i class="fa fa-google"></i></a>
+                    <a href="#" class="social" style="font-size: 20px;"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="social" style="font-size: 20px;"><i class="fa fa-twitter"></i></a>
+                </div>
+                <section class="copy legal">
+                    <p><span class="small">By continuing, you agree to accept our <br> <a href="#"> Privacy Policy</a>
+                            &amp; <a href="#">Terms of Service</a></span></p>
+                </section> 
+            </form>
+
+        </div>
+    </div>
+
+<script>
+
+    var state = false;
+    function toggle() {
+        if (state) {
+            document.getElementById("password").setAttribute("type","password");
+            document.getElementById("eye").style.color='#7a797e'
+            state = false;
+        } else {
+            document.getElementById("password").setAttribute("type","text");
+            document.getElementById("eye").style.color='#8B1BA0'
+            state = true; 
+        }
+    }
+</script>
+</body>
+
+</html>
